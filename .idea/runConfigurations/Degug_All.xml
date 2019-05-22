@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Degug All" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+    <toRun type="GradleRunConfiguration" name="POCServer [gwtCodeServer]" />
+    <toRun type="GradleRunConfiguration" name="POCServer [npmStart]" />
+    <toRun type="GradleRunConfiguration" name="POCServer [tomcatRun]" />
+    <toRun type="JavascriptDebugType" name="JavaScript Debug" />
+    <method />
+  </configuration>
+</component>
