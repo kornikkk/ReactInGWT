@@ -1,0 +1,41 @@
+.Tree {
+    margin: 0;
+    padding: 0;
+}
+
+.Tree ul {
+    list-style-type: none;
+    padding: 0 0 0 1.1em;
+}
+
+.TreeElement.node {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+}
+
+.TreeElement.caret::before {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    width: 1em;
+    color: black;
+    content: ""; /* Unicode arrow */
+}
+
+.TreeElement.caret.disabled::before {
+}
+
+.TreeElement.caret.enabled::before {
+    content: "\25B6"; /* Unicode arrow */
+}
+
+.TreeElement.caret.expanded::before {
+    transform: rotate(90deg);
+}
+
+.TreeElement.children.collapsed {
+    display: none;
+}
+
+.TreeElement.children.expanded {
+    display: block;
+}
